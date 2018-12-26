@@ -1,7 +1,6 @@
 ## [Abstract VM](https://github.com/Dude-Rocker/resources/blob/master/pdf-s/abstract-vm.pdf)
 ## The project school 42 of C++ branch
-### The purpose of this project is to create a simple virtual machine that can interpret programs, it will run some basic arithmetic programs coded in a very basic assembly language.
-#### *If you want to have an idea of what the program’s capabilities should look like, type the command man dc in your shell.*
+### The purpose of this project is to create a simple virtual machine that can interpret programs, it will run some basic arithmetic programs coded in a very basic assembly language. *If you want to have an idea of what the program’s capabilities should look like, type the command man dc in your shell.*
 ### The language of AbstractVM is composed of a series of instructions, with one instruction per line and he has a limited type system:
 * **;** - comment
 * **push v** - Pushes the value v at the top of the stack. The value v must have one of the following form:
