@@ -1,0 +1,90 @@
+
+   ; u s e  test
+
+push int8(15) ; 	 good
+
+		push int16(9) 		; good
+
+push int32(-42)
+
+ push 			float(42.5)
+
+
+   				;    no  error !!@#$%*^&(!@#$)(!*@#+-*7/8
+
+push double(444.555)
+
+dump
+
+;444.555
+;42.5
+;-42
+;9
+;15
+
+	; that was is all good
+
+pop
+pop
+pop
+pop
+pop
+pop
+; last pop >>> exception
+
+
+
+push int32(42) this is syntax error and next two value too
+
+push int_8(42)
+
+push int32(42.456)
+
+push int8(-180) ;underflow
+
+push int16(2147483648) ;overflow
+
+push double(89.564879)
+
+push int32(42)
+
+push int32(-42)
+
+add   ; -42 + 42 = 0 !
+dump
+push int16(2)
+
+mod
+
+div
+
+	;both case for excetpion
+sub ; 2 - 0 = 2
+mul ; 2 * 89.564879 = 179,129758
+dump
+
+
+push int8(42)
+
+assert int8(42) ;good
+
+assert int16(42) ;no good
+
+assert int8(36) ;no good
+
+print ; *
+
+sub
+
+push int8(5)
+mul
+dump
+
+; add err
+add
+
+exit
+
+; no error
+
+push float(42.456) ; after exit = error !
